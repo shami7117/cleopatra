@@ -7,12 +7,12 @@ import Footer from "@/components/LandingPage/Footer";
 const torusPro = localFont({
   src: [
     {
-      path: "/fonts/TorusPro-regular.ttf",
+      path: "/fonts/TorusPro-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/TorusPro-bold.ttf",
+      path: "/fonts/TorusPro-Bold.ttf",
       weight: "700",
       style: "normal",
     },
