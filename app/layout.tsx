@@ -8,6 +8,7 @@ const torusPro = localFont({
   src: [
     {
       path: "/fonts/TorusPro-Regular.ttf",
+      path: "/fonts/TorusPro-Regular.tff",
       weight: "400",
       style: "normal",
     },
