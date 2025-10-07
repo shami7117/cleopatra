@@ -23,7 +23,7 @@ const socialLinks = [
     { name: 'COOKIE POLICY', url: '#' },
     { name: 'NOTICE AT COLLECTION', url: '#' },
     { name: 'OUR LOCATIONS', url: '#' },
-    { name: 'OUR BLOG', url: '#' },
+    { name: 'OUR BLOG', url: '/blogs' },
     { name: 'CREATOR PROGRAM', url: '#' },
   ];
 

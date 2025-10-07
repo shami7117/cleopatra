@@ -12,7 +12,7 @@ const Footer = () => {
       { name: 'Our Locations', href: '#' },
       { name: 'Join Our Team', href: '#' },
       { name: 'Creator Program', href: '#' },
-      { name: 'Our Blog', href: '#' }
+      { name: 'Our Blog', href: '/blogs' }
     ],
     privacyTerms: [
       { name: 'Terms of Service', href: '#' },
