@@ -1,4 +1,7 @@
 import React from 'react';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] });
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
@@ -28,7 +31,7 @@ const socialLinks = [
   ];
 
   return (
-    <footer className="bg-[#FD037E] text-white">
+  <footer className={`bg-[#FD037E] text-white ${poppins.className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo and Social Section */}
@@ -56,7 +59,7 @@ const socialLinks = [
 
           {/* Apps Section */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Apps</h3>
+            <h3 className="text-[24px] font-medium mb-6">Apps</h3>
             <ul className="space-y-4">
               {appLinks.map((link, index) => (
                 <li key={index}>
@@ -64,7 +67,7 @@ const socialLinks = [
                     href={link.url}
                     className="flex items-center justify-between group hover:translate-x-1 transition-transform duration-200"
                   >
-                    <span className="text-sm sm:text-base">{link.name}</span>
+                    <span className="text-sm sm:text-[20px] font-normal">{link.name}</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                   </a>
                 </li>
@@ -79,7 +82,7 @@ const socialLinks = [
                 <li key={index}>
                   <a
                     href={link.url}
-                    className="text-sm sm:text-base hover:underline transition-all duration-200 block"
+                    className="text-sm sm:text-[20px] font-normal hover:underline transition-all duration-200 block"
                   >
                     {link.name}
                   </a>

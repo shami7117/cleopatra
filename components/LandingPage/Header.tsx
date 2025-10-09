@@ -10,6 +10,9 @@ import {
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
+import {Quicksand} from 'next/font/google'
+
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400', '700'] })
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -38,7 +41,7 @@ const Header = () => {
           <a 
             key={item.label}
             href={item.href} 
-            className="text-base text-gray-700 hover:text-gray-900 transition-colors"
+            className={`${quicksand.className} text-[18px] font-bold text-[#000000] hover:text-gray-900 transition-colors`}
           >
             {item.label}
           </a>
@@ -63,7 +66,7 @@ const Header = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="text-lg font-medium text-gray-700 hover:text-gray-900 transition-colors py-2"
+                className={`${quicksand.className} text-lg font-medium text-[#000000] hover:text-gray-900 transition-colors py-2`}
               >
                 {item.label}
               </a>

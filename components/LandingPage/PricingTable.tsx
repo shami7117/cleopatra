@@ -33,7 +33,7 @@ const PricingTable = () => {
     <section className="w-full px-4 md:px-8 lg:px-16 py-16 md:py-24 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FD037E] text-center mb-8 md:mb-12">
+        <h2 className="text-3xl md:text-[44px]  lg:text-[52px] font-semibold text-[#FD037E] text-center mb-8 md:mb-12">
           Simple, Honest Pricing
         </h2>
 

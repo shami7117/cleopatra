@@ -29,10 +29,10 @@ const BlogPage: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
                   <div className="p-6 lg:p-8">
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    <h1 className="text-2xl sm:text-3xl lg:text-[42px] font-bold text-[#4B4B4B] mb-4">
                       {featuredPost.title}
                     </h1>
-                    <p className="text-gray-600 text-base sm:text-lg mb-6 leading-relaxed">
+                    <p className="text-[#777777] text-base sm:text-[18px] mb-6 leading-relaxed">
                       {featuredPost.excerpt}
                     </p>
                   </div>
@@ -53,7 +53,7 @@ const BlogPage: React.FC = () => {
                       className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg flex-shrink-0"
                     />
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-sm sm:text-base font-semibold text-gray-900 line-clamp-3 leading-snug">
+                      <h3 className="text-sm sm:text-[18px] font-semibold text-[#4B4B4B] line-clamp-3 leading-snug">
                         {post.title}
                       </h3>
                     </div>
@@ -66,7 +66,7 @@ const BlogPage: React.FC = () => {
 
         {/* Most Popular Posts */}
         <div className="mt-16 lg:mt-24">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 lg:mb-12" style={{ color: '#FD037E' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-bold mb-8 lg:mb-12" style={{ color: '#FD037E' }}>
             Most Popular Posts
           </h2>
           
@@ -82,7 +82,7 @@ const BlogPage: React.FC = () => {
                     />
                   </div>
                   <div className="p-6 lg:p-8">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+                    <h3 className="text-xl sm:text-[32px] font-semibold text-[#4B4B4B] mb-2 leading-tight">
                       {post.title}
                     </h3>
                   </div>
@@ -94,7 +94,7 @@ const BlogPage: React.FC = () => {
           {/* View All Button */}
           <div className="flex justify-center mt-10 lg:mt-12">
             <Link href="/blogs">
-              <button className="px-12 py-3 border-2 border-gray-300 text-gray-700 rounded-full hover:border-pink-500 hover:text-pink-500 transition-colors duration-300 font-medium text-sm sm:text-base">
+              <button className="px-12 py-3 border-2 border-gray-300 text-gray-700 rounded-[10px] hover:border-pink-500 hover:text-pink-500 transition-colors duration-300 font-medium text-sm sm:text-base">
                 VIEW ALL
               </button>
             </Link>
@@ -103,7 +103,7 @@ const BlogPage: React.FC = () => {
 
         {/* All Articles */}
         <div className="mt-16 lg:mt-24">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 lg:mb-12" style={{ color: '#FD037E' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-bold mb-8 lg:mb-12" style={{ color: '#FD037E' }}>
             All Articles
           </h2>
           
@@ -119,7 +119,7 @@ const BlogPage: React.FC = () => {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 leading-tight">
+                    <h3 className="text-lg sm:text-[32px] font-semibold text-[#4B4B4B] leading-tight">
                       {post.title}
                     </h3>
                   </div>
@@ -132,7 +132,7 @@ const BlogPage: React.FC = () => {
           <div className="flex justify-center mt-10 lg:mt-12">
             <Link href="/blogs">
               <button 
-                className="px-12 py-3 border-2 text-white rounded-full transition-colors duration-300 font-medium text-sm sm:text-base"
+                className="px-12 py-3 border-2 text-white rounded-[10px] transition-colors duration-300 font-medium text-sm sm:text-base"
                 style={{ borderColor: '#FD037E', backgroundColor: '#FD037E' }}
               >
                 READ MORE

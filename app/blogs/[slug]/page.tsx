@@ -23,7 +23,7 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
     slug: '10-quick-cleaning-hacks-busy-professionals',
     title: '10 Quick Cleaning Hacks For Busy Professionals',
     excerpt: 'Pressed for time? These simple tricks will keep your home fresh and stress-free—without eating up your day.',
-    image: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=600&fit=crop',
+    image: '/quick.png',
     category: 'Tips',
     author: 'Jessica Martinez',
     date: '2024-03-01',
@@ -84,7 +84,15 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
       description: 'For ultimate hack? Let the professionals handle the deep cleaning. Book a CleoCrew pro in under 60 seconds and take back your time.'
     }
   ];
-  const popularPosts = blogPosts.filter(post => post.featured && post.id !== 7).slice(0, 4);
+  const popularPosts = (() => {
+    const posts = blogPosts.filter(p => p.featured && p.id !== currentPost.id);
+    // Deduplicate by title so similar/duplicate posts don't show twice
+    const uniqueByTitle = new Map<string, typeof posts[0]>();
+    for (const p of posts) {
+      if (!uniqueByTitle.has(p.title)) uniqueByTitle.set(p.title, p);
+    }
+    return Array.from(uniqueByTitle.values()).slice(0, 4);
+  })();
 
   return (
     <>
@@ -110,7 +118,7 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 {currentPost.title}
               </h1>
-              <p className="text-base sm:text-lg opacity-90 leading-relaxed">
+              <p className="text-base sm:text-[18px] opacity-90 leading-relaxed">
                 {currentPost.excerpt}
               </p>
             </div>
@@ -121,7 +129,7 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
                 <img 
                   src={currentPost.image}
                   alt={currentPost.title}
-                  className="w-full h-64 sm:h-80 object-cover"
+                  className="max-w-[523px] w-full h-64 sm:h-80 object-cover"
                 />
               </div>
             </div>
@@ -133,23 +141,20 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
       <div className="container mx-auto px-4 py-12 lg:py-16 max-w-7xl">
         {/* Introduction */}
         <div className="mb-12">
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-            When work deadlines and family responsibilities pile up, cleaning often feels like the last thing you have time for. 
-            But a messy home can add to stress, making it harder to unwind when you do get home. So, what's the solution?
+          <p className="text-[#4B4B4B] text-base sm:text-[18px] leading-relaxed mb-6">
+            When work deadlines and family responsibilities pile up, cleaning often feels like the last thing you have time for. But a messy home can add to stress, making it harder to unwind. That’s why we’ve rounded up 10 quick, no-fuss cleaning hacks designed especially for busy professionals like you.
           </p>
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-            <strong>Smart, quick hacks.</strong>
-          </p>
+         
         </div>
 
         {/* Cleaning Hacks List */}
         <div className="space-y-8">
           {cleaningHacks.map((hack) => (
-            <div key={hack.number} className="border-l-4 border-[#FD037E] pl-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+            <div key={hack.number} className=" ">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#4B4B4B] mb-3">
                 Hack #{hack.number}: {hack.title}
               </h2>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p className="text-[#4B4B4B] text-base sm:text-[18px] leading-relaxed">
                 {hack.description}
               </p>
             </div>
@@ -158,13 +163,13 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
 
         {/* Closing Content */}
         <div className="mt-12 space-y-6">
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+          <p className="text-[#4B4B4B] text-base sm:text-[18px] leading-relaxed">
             A clean home doesn't have to take hours. With these simple hacks, you can maintain a tidy space even on your 
             busiest days. Each one is designed to save you time and effort without sacrificing cleanliness. Remember, consistency is the secret—
             small daily actions add up to a spotless space.
           </p>
           
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+          <p className="text-[#4B4B4B] text-base sm:text-[18px] leading-relaxed">
             But you don't have to do it all on your own. When life gets crazy cleaning, the CleoCrew is just a click away. Our 
             experienced professionals can handle the heavy lifting, so you can spend more time on the things that matter most. 
             Book a session today, and say goodbye to the cleaning overwhelm. Your home—and your peace of mind—will thank you. 
@@ -175,7 +180,7 @@ const BlogDetailPage: React.FC<BlogDetailProps> = ({ post }) => {
         {/* CTA Button */}
         <div className="mt-12 flex justify-center">
           <button 
-            className="px-8 sm:px-12 py-3 sm:py-4 text-white rounded-full transition-all duration-300 font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="px-8 sm:px-12 py-3 sm:py-4 text-white rounded-[10px] transition-all duration-300 font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             style={{ backgroundColor: '#FD037E' }}
           >
             BOOK YOUR NEXT CLEANING NOW
@@ -203,7 +208,7 @@ Related Articles          </h2>
                   />
                 </div>
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 leading-tight">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#4B4B4B] mb-2 leading-tight">
                     {post.title}
                   </h3>
                 </div>
@@ -213,7 +218,7 @@ Related Articles          </h2>
 
           {/* View All Button */}
           <div className="flex justify-center mt-10 lg:mt-12">
-            <button className="px-12 py-3 border-2 border-gray-300 text-gray-700 rounded-full hover:border-pink-500 hover:text-pink-500 transition-colors duration-300 font-medium text-sm sm:text-base">
+            <button className="px-12 py-3 border-2 border-gray-300 rounded-[10px] text-[#4B4B4B]  hover:border-pink-500 hover:text-pink-500 transition-colors duration-300 font-medium text-sm sm:text-base">
               VIEW ALL
             </button>
           </div>

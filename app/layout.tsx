@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/LandingPage/Header"
 import Footer from "@/components/LandingPage/Footer";
-
 const torusPro = localFont({
   src: [
     {

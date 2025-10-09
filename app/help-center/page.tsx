@@ -1,9 +1,12 @@
 import React from 'react';
+import { Poppins } from 'next/font/google';
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import Header from '@/components/LandingPage/Header';
 import GlobalFooter from '@/components/GlobalFooter';
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] });
+
 const HelpCenterPage = () => {
   const sections = [
     {
@@ -93,13 +96,13 @@ const HelpCenterPage = () => {
   ];
 
   return (
-    <>
-    <Header />
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+  <>
+  <Header />
+  <div className={`min-h-screen bg-gradient-to-b from-gray-50 to-white ${poppins.className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold text-[#040D11] mb-6 sm:mb-8">
             How can we help?
           </h1>
           
@@ -122,7 +125,7 @@ const HelpCenterPage = () => {
               className="bg-[#FFB0D70F] border border-gray-100 hover:shadow-lg transition-shadow duration-200 rounded-xl"
             >
               <CardContent className="p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+                <h2 className="text-xl sm:text-2xl font-semibold text-[#040D11] mb-4 sm:mb-6">
                   {section.title}
                 </h2>
                 <ul className="space-y-3 sm:space-y-4">
@@ -130,7 +133,7 @@ const HelpCenterPage = () => {
                     <li key={itemIndex}>
                       <a
                         href="#"
-                        className="text-sm sm:text-base text-gray-600 hover:text-gray-900 hover:underline transition-colors duration-150 block leading-relaxed"
+                        className="text-sm sm:text-base text-gray-600 hover:text-[#040D11] hover:underline transition-colors duration-150 block leading-relaxed"
                       >
                         {item}
                       </a>

@@ -1,5 +1,7 @@
 import React from 'react';
+import {Quicksand} from 'next/font/google'
 
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400', '700'] })
 const Footer = () => {
   const footerLinks = {
     apps: [
@@ -32,7 +34,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[#C70163] mt-[-12px] text-white">
+    <footer className={`w-full bg-[#C70163] mt-[-12px] text-white ${quicksand.className}`}>
     
 
       {/* Footer Content */}
@@ -42,13 +44,13 @@ const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             {/* Apps Column */}
             <div>
-              <h3 className="font-bold text-base md:text-lg mb-4">Apps</h3>
+              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Apps</h3>
               <ul className="space-y-2">
                 {footerLinks.apps.map((link, index) => (
                   <li key={index}>
                     <a 
                       href={link.href}
-                      className="text-sm md:text-base text-white hover:text-pink-200 transition-colors"
+                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -59,13 +61,13 @@ const Footer = () => {
 
             {/* Help & Support Column */}
             <div>
-              <h3 className="font-bold text-base md:text-lg mb-4">Help & Support</h3>
+              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Help & Support</h3>
               <ul className="space-y-2">
                 {footerLinks.helpSupport.map((link, index) => (
                   <li key={index}>
                     <a 
                       href={link.href}
-                      className="text-sm md:text-base text-white hover:text-pink-200 transition-colors"
+                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -76,13 +78,13 @@ const Footer = () => {
 
             {/* Privacy & Terms Column */}
             <div>
-              <h3 className="font-bold text-base md:text-lg mb-4">Privacy & Terms</h3>
+              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Privacy & Terms</h3>
               <ul className="space-y-2">
                 {footerLinks.privacyTerms.map((link, index) => (
                   <li key={index}>
                     <a 
                       href={link.href}
-                      className="text-sm md:text-base text-white hover:text-pink-200 transition-colors"
+                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -93,13 +95,13 @@ const Footer = () => {
 
             {/* Socials Column */}
             <div>
-              <h3 className="font-bold text-base md:text-lg mb-4">Socials</h3>
+              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Socials</h3>
               <ul className="space-y-2">
                 {footerLinks.socials.map((link, index) => (
                   <li key={index}>
                     <a 
                       href={link.href}
-                      className="text-sm md:text-base text-white hover:text-pink-200 transition-colors"
+                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -111,7 +113,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="border-t border-pink-500 pt-8 text-center">
-            <p className="text-sm md:text-base text-white">
+            <p className="text-sm md:text-[18px] font-normal text-white">
               © 2025 Cleopatra Inc. All Rights Reserved.
             </p>
           </div>
