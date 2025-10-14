@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "@/components/LandingPage/Header"
+import Header from "@/components/LandingPage/Header";
 import HeroSection from "@/components/LandingPage/HeroSection";
 import Features from "@/components/LandingPage/Features";
 import AboutSection from "@/components/LandingPage/AboutSection";
@@ -12,18 +12,17 @@ import BookCleaningCTA from "@/components/LandingPage/BookCleaningCTA";
 import Footer from "@/components/LandingPage/Footer";
 const CleopatraLanding = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Header/>
+    <div className="min-h-screen ">
+      <Header />
       <HeroSection />
       <Features />
       <AboutSection />
-      <TrustFeatures/>
-      <WaitlistCTA/>
-      <SparklBusiness/>
-      <SparklerOfMonth/>
-      <PricingTable/>
-      <BookCleaningCTA/>
-      <Footer/>
+      <WaitlistCTA />
+      <SparklBusiness />
+
+      <PricingTable />
+      <BookCleaningCTA />
+      <Footer />
     </div>
   );
 };

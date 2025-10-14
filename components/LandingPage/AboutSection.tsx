@@ -1,50 +1,58 @@
-import React from 'react';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import TrustFeatures from "./TrustFeatures";
 
 const AboutSection = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 py-16 md:py-24">
-      <div className="max-w-[950px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+    <section className="Tailoredprocess_featureMainDiv__w1W5n">
+      <div className="Tailoredprocess_featuresContainer__Gu9-z">
         {/* Text Content */}
-        <div className="space-y-6">
-          <h2 className="text-3xl md:text-[44px] lg:text-[52px] text-center md:text-left font-bold">
-            <span className="text-pink-600">Clean. Simple.</span><br />
-            <span className="text-pink-600">Stress-Free.</span>
-          </h2>
-          
-          <p className="text-[#777777] leading-relaxed text-center md:text-left  text-sm md:text-[18px]">
-            Cleopatra makes it easy to book a cleaner you can trust. No more stress. Just fast, reliable service with a few taps and total peace of mind.
-          </p>
+        <div className="Tailoredprocess_featureSubDiv__FHTUh">
+          <div className="Tailoredprocess_featureContent__T6a-x">
+            <div className="font-torus Tailoredprocess_featureText__88C38">
+              <h2 className="Tailoredprocess_featureTitle__y89Oo">
+                <span>Clean. Simple.</span>
 
-          <p className="text-[#777777] leading-relaxed text-center md:text-left text-sm md:text-[18px]">
-            We built Cleopatra for people who value their time and want to feel in control of their spaces or service. If someone needs a cleaner with an excellent cleaning background and dependable price who strives wisely to shine, Cleopatra lets you skip the stress and get back to what matters most.
-          </p>
-          
-          <div className="space-y-3 text-center md:text-left ">
-            <p className="text-[#777777] text-sm md:text-[18px]">How Booking Works:</p>
-            <ol className="space-y-2 text-[#777777] text-sm md:text-[18px]">
-              <li>1. Tell us about your space and cleaning needs</li>
-              <li>2. We'll match you with a top-rated cleaner nearby</li>
-              <li>3. Pay securely and relax</li>
-            </ol>
-          </div>
-        </div>
+                <span> Stress-Free.</span>
+              </h2>
 
-        {/* Illustration with Image */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-md">
-            <div className=" rounded-3xl p-8 md:p-12  flex items-center justify-center">
-              <Image
-                src="/stress-free.png" 
+              <p className="Tailoredprocess_featureDescription__gwnN1">
+                Cleopatra makes it easy to book a cleaner you can trust. No back
+                and forth, no hidden fees. Just fast, reliable service with a
+                few taps and total peace of mind.
+              </p>
+
+              <p className="Tailoredprocess_featureDescription__gwnN1">
+                We built Cleopatra for people who value their time and don’t
+                want to chase down quotes or wonder if someone will actually
+                show up. With a streamlined booking experience and dependable
+                pros who arrive ready to shine, Cleopatra lets you skip the
+                stress and get back to what matters most.
+              </p>
+
+              <div className="Tailoredprocess_bookingSteps__-K1el ">
+                <p className="Tailoredprocess_featureDescription__gwnN1">
+                  How Booking Works:
+                </p>
+                <ol className="Tailoredprocess_stepsList__vsAZQ">
+                  <li> Tell us about your space and cleaning needs</li>
+                  <li> We'll match you with a top-rated cleaner nearby</li>
+                  <li> Pay securely and relax</li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Illustration with Image */}
+            <div className="Tailoredprocess_featureImage__97OHd">
+              <img
+                src="/stress-free.png"
                 alt="Cleaning illustration"
-                width={426}
-                height={423}
-                className="rounded-2xl object-contain"
-                priority
+                className="Tailoredprocess_sectionImage__d1nX7"
               />
             </div>
           </div>
+          <TrustFeatures />
         </div>
       </div>
     </section>

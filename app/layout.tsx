@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/LandingPage/Header"
+import Header from "@/components/LandingPage/Header";
 import Footer from "@/components/LandingPage/Footer";
 const torusPro = localFont({
   src: [
@@ -19,7 +19,16 @@ const torusPro = localFont({
   variable: "--font-torus-pro",
   display: "swap",
 });
-
+const poppins = localFont({
+  src: [
+    { path: "/fonts/Poppins-Regular.ttf", weight: "400", style: "normal" },
+    { path: "/fonts/Poppins-Medium.ttf", weight: "500", style: "normal" },
+    // { path: "/fonts/Poppins-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "/fonts/Poppins-Bold.ttf", weight: "700", style: "normal" },
+  ],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,13 +41,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={torusPro.className}>
-  <body className="antialiased">
-    {/* <Header/> */}
-    {children}
-    {/* <Footer/> */}
-    </body>
-</html>
-
+    <html lang="en" className={`${poppins.className} ${torusPro.className}`}>
+      <body className="antialiased">
+        {/* <Header/> */}
+        {children}
+        {/* <Footer/> */}
+      </body>
+    </html>
   );
 }

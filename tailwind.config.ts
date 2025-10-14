@@ -8,13 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-    fontFamily: {
-  sans: ["var(--font-torus-pro)", "Arial", "Helvetica", "sans-serif"],
-  torus: ["var(--font-torus-pro)", "Arial", "Helvetica", "sans-serif"],
-},
+      fontFamily: {
+        // sans: ["var(--font-torus-pro)", "Arial", "Helvetica", "sans-serif"],
+        // torus: ["var(--font-torus-pro)", "Arial", "Helvetica", "sans-serif"],
+        // tailwind.config.ts
 
-
+        sans: ["var(--font-poppins)", "sans-serif"],
+        torus: ["var(--font-torus-pro)", "Arial", "Helvetica", "sans-serif"],
+      },
     },
+    // screens: {
+    //   sm: "640px",
+    //   md: "768px",
+    //   lg: "1024px",
+    //   xl: "1280px",
+    //   "2xl": "1536px",
+    // },
   },
   plugins: [],
 };

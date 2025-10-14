@@ -1,42 +1,48 @@
-import React from 'react';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import SparklerOfMonth from "./SparklerOfMonth";
 
 const SparklBusiness = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 py-16 md:py-24 bg-white">
-      <div className="max-w-[950px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-        
+    <section className="Businesssparkl_businessMainDiv__rGdVq">
+      <div className="Businesssparkl_container__mNAJ3">
         {/* Text Content */}
-        <div className="space-y-6">
-          <h2 className="text-3xl md:text-[44px] text-center md:text-left  lg:text-[52px] font-semibold">
-            <span className="text-[#FD037E]">✨ sparkl for business</span>
-          </h2>
-          
-          <p className="text-[#777777] text-center md:text-left  text-sm md:text-[18px] leading-relaxed">
-           Whether it’s offices, gyms, or retail spaces, Cleopatra for Business is coming soon to bring trusted, on-demand cleanings to your workplace with flexible scheduling, vetted pros, and no contracts.
-          </p>
+        <div className="Businesssparkl_content__zd1qC">
+          <div className="Businesssparkl_businessSection__8pthh">
+            <div className="Businesssparkl_businessContent__zvI9Y">
+              <div className="Businesssparkl_businessHeading__G6FJg">
+                <img
+                  src="/sparklforbusinesstitle.png"
+                  alt="sparkle businnes image"
+                  className="Businesssparkl_businessImageTitle__rD6v8"
+                />
+              </div>
 
-          <div className='flex justify-center md:justify-start'>
-            <Button 
-              variant="outline"
-              className="border-2  border-pink-600 text-[#FD037E] hover:bg-pink-50 font-bold px-8 py-6 rounded-full text-base"
-            >
-              COMING SOON
-            </Button>
+              <p className="Businesssparkl_businessText__XJm-v">
+                Whether it’s offices, gyms, or retail spaces, Cleopatra for
+                Business is coming soon to bring trusted, on-demand cleanings to
+                your workplace with flexible scheduling, vetted pros, and no
+                contracts.
+              </p>
+
+              <a href="#">
+                <button className="font-torus Businesssparkl_comingSoonButton__Bwzdm">
+                  join the wishlist
+                </button>
+              </a>
+            </div>
+
+            {/* Image instead of Illustration */}
+            <div className="Businesssparkl_businessImageContainer__fOugo">
+              <img
+                src="/business.png"
+                alt="Sparkl Business"
+                className="Businesssparkl_businessImage__4Xvzp"
+              />
+            </div>
           </div>
-        </div>
-
-        {/* Image instead of Illustration */}
-        <div className="flex justify-center md:justify-end">
-          <Image 
-            src="/business.png" 
-            alt="Sparkl Business"
-            width={400}
-            height={400}
-            className="rounded-xl object-contain"
-            priority
-          />
+          <SparklerOfMonth />
         </div>
       </div>
     </section>
