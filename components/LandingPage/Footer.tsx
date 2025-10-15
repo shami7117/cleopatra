@@ -1,54 +1,54 @@
-import React from 'react';
-import {Quicksand} from 'next/font/google'
+import React from "react";
+import { Quicksand } from "next/font/google";
 
-const quicksand = Quicksand({ subsets: ['latin'], weight: ['400', '700'] })
+const quicksand = Quicksand({ subsets: ["latin"], weight: ["400", "700"] });
 const Footer = () => {
   const footerLinks = {
     apps: [
-      { name: 'Cleopatra for Android', href: '#' },
-      { name: 'Cleopatra for iOS', href: '#' }
+      { name: "Cleopatra for Android", href: "#" },
+      { name: "Cleopatra for iOS", href: "#" },
     ],
     helpSupport: [
-      { name: 'Client Support', href: '#' },
-      { name: 'CleoCrew Support', href: '#' },
-      { name: 'Our Locations', href: '#' },
-      { name: 'Join Our Team', href: '#' },
-      { name: 'Creator Program', href: '#' },
-      { name: 'Our Blog', href: '/blogs' }
+      { name: "Client Support", href: "#" },
+      { name: "CleoCrew Support", href: "#" },
+      { name: "Our Locations", href: "#" },
+      { name: "Join Our Team", href: "#" },
+      { name: "Creator Program", href: "#" },
+      { name: "Our Blog", href: "/blogs" },
     ],
     privacyTerms: [
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-      { name: 'Notice at Collection', href: '#' }
+      { name: "Terms of Service", href: "#" },
+      { name: "Privacy Policy", href: "#" },
+      { name: "Cookie Policy", href: "#" },
+      { name: "Notice at Collection", href: "#" },
     ],
     socials: [
-      { name: 'Instagram', href: '#' },
-      { name: 'TikTok', href: '#' },
-      { name: 'Twitter / X', href: '#' },
-      { name: 'YouTube', href: '#' },
-      { name: 'LinkedIn', href: '#' },
-      { name: 'Facebook', href: '#' },
-      { name: 'Pinterest', href: '#' }
-    ]
+      { name: "Instagram", href: "#" },
+      { name: "TikTok", href: "#" },
+      { name: "Twitter / X", href: "#" },
+      { name: "YouTube", href: "#" },
+      { name: "LinkedIn", href: "#" },
+      { name: "Facebook", href: "#" },
+      { name: "Pinterest", href: "#" },
+    ],
   };
 
   return (
-    <footer className={`w-full bg-[#C70163] mt-[-12px] text-white ${quicksand.className}`}>
-    
-
+    <footer className={`Footer_footerMain__Swlnc ${quicksand.className}`}>
       {/* Footer Content */}
-      <div className="px-4 md:px-8 lg:px-16 pb-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="Footer_footerContainer__WPMg8">
+        <div className="Footer_footerSub__7A5W1">
           {/* Links Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+          <div className="Footer_footerLeft__YPuN2">
             {/* Apps Column */}
-            <div>
-              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Apps</h3>
-              <ul className="space-y-2">
+            <div className="Footer_footerCol__zjQUX">
+              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">
+                Apps
+              </h3>
+              <ul className="">
                 {footerLinks.apps.map((link, index) => (
                   <li key={index}>
-                    <a 
+                    <a
                       href={link.href}
                       className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
@@ -60,12 +60,14 @@ const Footer = () => {
             </div>
 
             {/* Help & Support Column */}
-            <div>
-              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Help & Support</h3>
-              <ul className="space-y-2">
+            <div className="Footer_footerCol__zjQUX">
+              <h3 className="Footer_footerRightLastUl__rqoo0">
+                Help & Support
+              </h3>
+              <ul className="Footer_footerRightLastUl__rqoo0">
                 {footerLinks.helpSupport.map((link, index) => (
                   <li key={index}>
-                    <a 
+                    <a
                       href={link.href}
                       className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
                     >
@@ -75,17 +77,15 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-
-            {/* Privacy & Terms Column */}
-            <div>
-              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Privacy & Terms</h3>
-              <ul className="space-y-2">
+          </div>
+          {/* Privacy & Terms Column */}
+          <div className="Footer_footerRight__63mUT">
+            <div className="Footer_footerCol__zjQUX">
+              <h3 className="">Privacy & Terms</h3>
+              <ul className="">
                 {footerLinks.privacyTerms.map((link, index) => (
                   <li key={index}>
-                    <a 
-                      href={link.href}
-                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
-                    >
+                    <a href={link.href} className="">
                       {link.name}
                     </a>
                   </li>
@@ -94,15 +94,12 @@ const Footer = () => {
             </div>
 
             {/* Socials Column */}
-            <div>
-              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">Socials</h3>
-              <ul className="space-y-2">
+            <div className="Footer_footerCol__zjQUX">
+              <h3 className="">Socials</h3>
+              <ul className="">
                 {footerLinks.socials.map((link, index) => (
                   <li key={index}>
-                    <a 
-                      href={link.href}
-                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
-                    >
+                    <a href={link.href} className="">
                       {link.name}
                     </a>
                   </li>
@@ -110,14 +107,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
-          {/* Copyright */}
-          <div className="border-t border-pink-500 pt-8 text-center">
-            <p className="text-sm md:text-[18px] font-normal text-white">
-              © 2025 Cleopatra Inc. All Rights Reserved.
-            </p>
-          </div>
         </div>
+      </div>
+      {/* Copyright */}
+      <div className="Footer_footerCopyDiv__5kyj-">
+        <p className="">© 2025 Cleopatra Inc. All Rights Reserved.</p>
       </div>
     </footer>
   );
