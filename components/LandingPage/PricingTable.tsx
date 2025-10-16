@@ -82,7 +82,7 @@ const PricingTable = () => {
                       <TableCell className="Pricingtable_priceCell__wjRvq">
                         {item.deep}
                       </TableCell>
-                      <TableCell className="Pricingtable_serviceCell__F96NP">
+                      <TableCell className="Pricingtable_priceCell__wjRvq">
                         {item.addOn}
                       </TableCell>
                     </TableRow>
