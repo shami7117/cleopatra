@@ -1,7 +1,10 @@
 import React from "react";
 import { Quicksand } from "next/font/google";
 
-const quicksand = Quicksand({ subsets: ["latin"], weight: ["400", "700"] });
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const Footer = () => {
   const footerLinks = {
     apps: [

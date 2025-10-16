@@ -50,7 +50,7 @@ const TrustFeatures = () => {
                   alt={feature.title}
                   width={426}
                   height={423}
-                  className="object-contain rounded-2xl"
+                  className="Tailoredprocess_sectionImage__d1nX7"
                   priority={index === 0}
                 />
               </div>

@@ -167,9 +167,9 @@
 
 .Header_menuLink__XQyg6 {
   color: #000;
-  font-family: Quicksand, sans-serif;
+  font-family: Quicksand, sans-serif !important;
   font-size: 18px;
-  font-style: normal;
+  font-style: normal !important;
   font-weight: 700;
   letter-spacing: -.36px;
   line-height: 22px;
@@ -432,11 +432,11 @@
 
 .Tailoredprocess_featureDescription__gwnN1 {
   color: #777;
-  font-family: Quicksand, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
+  font-family: Quicksand, sans-serif !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
   margin-bottom: 20px;
 }
 
@@ -1049,12 +1049,12 @@
 
 .BlogPage_largeCardDescription__qlzqw {
   color: #777;
-  color: var(--Body-text-color, #777);
-  font-family: Quicksand;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
+
+  font-family: Quicksand !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 22px !important;
 }
 
 .BlogPage_sidebar__wJiS3 {
@@ -1251,6 +1251,53 @@
   letter-spacing: 0.01em;
 }
 
+
+.Helpcenter_helpcenterMain__b7pr6 {
+  height: auto;
+  width: 100%;
+}
+
+.Helpcenter_helpcenterContainer__4PG4g {
+  margin: 0 auto;
+  max-width: 1660px;
+  padding: 180px 20px 100px;
+}
+
+.Helpcenter_helpcenterSub__jdLnU {
+  width: 100%;
+}
+
+.Helpcenter_helpcenterHeader__ADkcO h3 {
+  color: #040d11;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+.Helpcenter_searchSection__zGSSC {
+  margin: 40px auto 0;
+  max-width: 600px;
+}
+
+.Helpcenter_searchInputGroup__xM\+Lt {
+  align-items: center;
+  border: 1px solid #b3b3b3;
+  border-radius: 50px;
+  color: #0009;
+  display: flex;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 10px;
+  justify-content: flex-start;
+  line-height: 139.7%;
+  padding: 0 38px;
+}
+
 @media only screen and (max-width: 1599px) {
   .Herosection_appBothButtons__tGRVa {
     gap: 16px;
@@ -1301,6 +1348,17 @@
   .Footer_footerMain__Swlnc {
     padding-top: 320px;
   }
+
+  .Helpcenter_helpcenterContainer__4PG4g {
+    max-width: 1320px;
+  }
+
+  .Helpcenter_searchInputGroup__xM\+Lt {
+    line-height: 110.7%;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -1334,6 +1392,14 @@
 
   .Footer_footerMain__Swlnc {
     padding-top: 280px;
+  }
+
+  .Helpcenter_helpcenterContainer__4PG4g {
+    max-width: 1150px;
+  }
+
+  .Helpcenter_helpcenterHeader__ADkcO h3 {
+    font-size: 35px;
   }
 }
 
@@ -1441,8 +1507,8 @@
   }
 
   .Tailoredprocess_featuresContainer__Gu9-z {
-    max-width: 100%;
-    padding: 24px 20px;
+    max-width: 100% !important;
+    padding: 24px 20px !important;
   }
 
 
@@ -1676,8 +1742,8 @@
   }
 
   .Tailoredprocess_featureDescription__gwnN1 {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
 
 

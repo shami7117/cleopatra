@@ -10,6 +10,7 @@ import BookCleaningCTA from "@/components/LandingPage/BookCleaningCTA";
 import GlobalFooter from "@/components/GlobalFooter";
 import EarningsSection from "@/components/Earn";
 import FAQSection from "@/components/Faq";
+import Footer from "@/components/LandingPage/Footer";
 const CleopatraLanding = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -22,7 +23,8 @@ const CleopatraLanding = () => {
       <SparklBusiness />
       {/* <SparklerOfMonth /> */}
       <FAQSection />
-      <GlobalFooter />
+      {/* <GlobalFooter /> */}
+      <Footer />
     </div>
   );
 };

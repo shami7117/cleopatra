@@ -3,6 +3,7 @@ import Link from "next/link";
 import { blogPosts } from "@/data/data";
 import Header from "@/components/LandingPage/Header";
 import GlobalFooter from "@/components/GlobalFooter";
+import Footer from "@/components/LandingPage/Footer";
 
 const BlogPage: React.FC = () => {
   const featuredPost = blogPosts.find((post) => post.id === 7);
@@ -155,7 +156,7 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <GlobalFooter />
+      <Footer />
     </>
   );
 };
