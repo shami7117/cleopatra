@@ -12,7 +12,7 @@ import BookCleaningCTA from "@/components/LandingPage/BookCleaningCTA";
 import Footer from "@/components/LandingPage/Footer";
 const CleopatraLanding = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="">
       <Header />
       <HeroSection />
       <Features />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "@/components/LandingPage/Header"
+import Header from "@/components/LandingPage/Header";
 import HeroSection from "@/components/LandingPage/HeroSection";
 import Features from "@/components/LandingPage/Features";
 import AboutSection from "@/components/LandingPage/AboutSection";
@@ -13,16 +13,16 @@ import FAQSection from "@/components/Faq";
 const CleopatraLanding = () => {
   return (
     <div className="min-h-screen bg-white">
-      <Header/>
+      <Header />
       <HeroSection />
       <Features />
       <AboutSection />
-      <TrustFeatures/>
-      <EarningsSection/>
-      <SparklBusiness/>
-      <SparklerOfMonth/>
-      <FAQSection/>
-      <GlobalFooter/>
+      <TrustFeatures />
+      <EarningsSection />
+      <SparklBusiness />
+      {/* <SparklerOfMonth /> */}
+      <FAQSection />
+      <GlobalFooter />
     </div>
   );
 };
