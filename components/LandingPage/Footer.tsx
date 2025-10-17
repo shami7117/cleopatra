@@ -45,16 +45,11 @@ const Footer = () => {
           <div className="Footer_footerLeft__YPuN2">
             {/* Apps Column */}
             <div className="Footer_footerCol__zjQUX">
-              <h3 className="font-bold text-[18px] md:text-[20px] mb-4">
-                Apps
-              </h3>
+              <h3 className="">Apps</h3>
               <ul className="">
                 {footerLinks.apps.map((link, index) => (
                   <li key={index}>
-                    <a
-                      href={link.href}
-                      className="text-sm md:text-[18px] font-normal text-white hover:text-pink-200 transition-colors"
-                    >
+                    <a href={link.href} className="">
                       {link.name}
                     </a>
                   </li>

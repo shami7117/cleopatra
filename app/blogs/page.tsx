@@ -156,7 +156,7 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <GlobalFooter />
     </>
   );
 };

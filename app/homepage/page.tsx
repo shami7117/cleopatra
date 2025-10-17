@@ -23,8 +23,8 @@ const CleopatraLanding = () => {
       <SparklBusiness />
       {/* <SparklerOfMonth /> */}
       <FAQSection />
-      {/* <GlobalFooter /> */}
-      <Footer />
+      <GlobalFooter />
+      {/* <Footer /> */}
     </div>
   );
 };

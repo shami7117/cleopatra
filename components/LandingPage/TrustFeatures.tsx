@@ -27,8 +27,8 @@ const TrustFeatures = () => {
   ];
 
   return (
-    <section className="Tailoredprocess_featureContent__T6a-x">
-      <div className="max-w-[950px] mx-auto space-y-16 md:space-y-24 ">
+    <section className="Tailoredprocess_featuresContainer__Gu9-z">
+      <div className="Tailoredprocess_featureContent__T6a-x Tailoredprocess_reverse__rzVE4">
         {features.map((feature, index) => (
           <div
             key={index}
@@ -58,7 +58,7 @@ const TrustFeatures = () => {
 
             {/* Text Content */}
             <div
-              className={`text-center md:text-left ${
+              className={`text-center md:text-left sm:p-2 ${
                 feature.position === "right" ? "md:order-1" : ""
               }`}
             >

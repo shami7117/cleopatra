@@ -99,57 +99,52 @@ const HelpCenterPage = () => {
   return (
     <>
       <Header />
-      <div
-        className={`min-h-screen bg-gradient-to-b from-gray-50 to-white ${poppins.className}`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <div className={`Helpcenter_helpcenterMain__b7pr6 ${poppins.className}`}>
+        <div className="Helpcenter_helpcenterContainer__4PG4g">
           {/* Header Section */}
-          <div className="text-center mb-8 sm:mb-12">
-            <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold text-[#040D11] mb-6 sm:mb-8">
-              How can we help?
-            </h1>
+          <div className="Helpcenter_helpcenterSub__jdLnU ">
+            <div className="Helpcenter_helpcenterHeader__ADkcO">
+              <h3 className="">How can we help?</h3>
+            </div>
 
             {/* Search Bar */}
-            <div className="max-w-xl mx-auto relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-              <Input
-                type="text"
-                placeholder="Search"
-                className="w-full pl-12 pr-4 py-6 text-base rounded-lg border-gray-200 focus:border-gray-300 focus:ring-2 focus:ring-gray-200"
-              />
+            <div className="Helpcenter_searchSection__zGSSC">
+              <div className="Helpcenter_searchInputGroup__xM+Lt">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="Helpcenter_filterInput__KgG7H"
+                />
+                <img src="/searchlogo.svg" alt="seachsvg" />
+              </div>
             </div>
           </div>
 
           {/* Grid Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <div className="Helpcenter_helpCenterGrid__XKpu2">
             {sections.map((section, index) => (
-              <Card
-                key={index}
-                className="bg-[#FFB0D70F] border border-gray-100 hover:shadow-lg transition-shadow duration-200 rounded-xl"
-              >
-                <CardContent className="p-6 sm:p-8">
-                  <h2 className="text-xl sm:text-2xl font-semibold text-[#040D11] mb-4 sm:mb-6">
-                    {section.title}
-                  </h2>
-                  <ul className="space-y-3 sm:space-y-4">
+              <div key={index} className="Helpcenter_helpcenterCard__L3l76">
+                <div className="">
+                  <h4 className="">{section.title}</h4>
+                  <div className="Helpcenter_cardInfoDiv__1Kmtr">
                     {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>
+                      <div key={itemIndex}>
                         <a
                           href="#"
                           className="text-sm sm:text-base text-gray-600 hover:text-[#040D11] hover:underline transition-colors duration-150 block leading-relaxed"
                         >
                           {item}
                         </a>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
-                </CardContent>
-              </Card>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </div>
-      <Footer />
+      <GlobalFooter />
     </>
   );
 };

@@ -1255,12 +1255,100 @@
   color: #fff;
 }
 
+
 .footer {
   background: #c70262;
   color: #fff;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   padding: 48px 0 24px 0;
   letter-spacing: 0.01em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 24px;
+}
+
+.footer-section {
+  min-width: 180px;
+  flex: 1 1 180px;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff;
+  /* ✅ Explicit color */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  /* ✅ Explicit color */
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s, -webkit-text-decoration 0.2s;
+  transition: opacity 0.2s, text-decoration 0.2s;
+  transition: opacity 0.2s, text-decoration 0.2s, -webkit-text-decoration 0.2s;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.footer-section ul li a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 48px auto 24px auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+  color: #fff;
+  /* ✅ Explicit color */
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .footer-section {
+    min-width: 0;
+  }
+
+  .footer-divider {
+    margin: 32px auto 16px auto;
+  }
 }
 
 
@@ -1308,6 +1396,92 @@
   justify-content: flex-start;
   line-height: 139.7%;
   padding: 0 38px;
+}
+
+.Helpcenter_filterInput__KgG7H {
+  padding: 17px 0;
+  width: 100%;
+}
+
+.Helpcenter_searchInputGroup__xM\+Lt img {
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  opacity: .6;
+  width: 24px;
+}
+
+.Helpcenter_filterInput__KgG7H::-webkit-input-placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.Helpcenter_filterInput__KgG7H::-moz-placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.Helpcenter_filterInput__KgG7H:-ms-input-placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.Helpcenter_filterInput__KgG7H::-ms-input-placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.Helpcenter_filterInput__KgG7H::placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.Helpcenter_helpCenterGrid__XKpu2 {
+  grid-gap: 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 100px auto 0;
+  width: 88%;
+}
+
+.Helpcenter_helpcenterCard__L3l76 {
+  background: #ffb0d70f;
+  border: 1px solid #0000001a;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 100%;
+  padding: 50px 33px 50px 50px;
+}
+
+.Helpcenter_helpcenterCard__L3l76 h4 {
+  color: #040d11;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.Helpcenter_cardInfoDiv__1Kmtr {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 1599px) {
@@ -1371,6 +1545,25 @@
     padding: 0 25px;
     width: 80%;
   }
+
+  .Helpcenter_searchInputGroup__xM\+Lt img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .Helpcenter_helpCenterGrid__XKpu2 {
+    gap: 30px;
+    margin-top: 80px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 {
+    padding: 40px 30px 40px 40px;
+  }
+
+  .Helpcenter_cardInfoDiv__1Kmtr {
+    gap: 18px;
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -1413,6 +1606,24 @@
   .Helpcenter_helpcenterHeader__ADkcO h3 {
     font-size: 35px;
   }
+
+  .Helpcenter_helpcenterContainer__4PG4g {
+    max-width: 1150px;
+  }
+
+  .Helpcenter_helpCenterGrid__XKpu2 {
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 {
+    padding: 30px;
+  }
+
+  .Helpcenter_cardInfoDiv__1Kmtr {
+    gap: 15px;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1440,6 +1651,32 @@
 
   .Tailoredprocess_featureSubDiv__FHTUh {
     gap: 50px;
+  }
+
+  .Helpcenter_helpcenterContainer__4PG4g {
+    max-width: 1100px;
+  }
+
+  .Helpcenter_searchSection__zGSSC {
+    margin-top: 30px;
+  }
+
+  .Helpcenter_helpCenterGrid__XKpu2 {
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 {
+    padding: 28px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 h4 {
+    font-size: 24px;
+  }
+
+  .Helpcenter_cardInfoDiv__1Kmtr {
+    gap: 14px;
+    margin-top: 22px;
   }
 }
 
@@ -1701,6 +1938,34 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .Helpcenter_helpcenterContainer__4PG4g {
+    max-width: 100%;
+    padding: 120px 20px 80px;
+  }
+
+  .Helpcenter_helpcenterHeader__ADkcO h3 {
+    font-size: 30px;
+  }
+
+  .Helpcenter_helpCenterGrid__XKpu2 {
+    gap: 18px;
+    margin-top: 40px;
+    width: 95%;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 {
+    padding: 25px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 h4 {
+    font-size: 20px;
+  }
+
+  .Helpcenter_cardInfoDiv__1Kmtr {
+    gap: 10px;
+    margin-top: 18px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -1858,8 +2123,13 @@
 
   .Header_logo__shVBB {
     max-width: 100px;
+    margin-left: -9px;
   }
 
+  .Pricingtable_priceCell__wjRvq {
+    font-size: 14px !important;
+    padding: 10px 8px !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1916,6 +2186,7 @@
 
   .Header_logo__shVBB {
     max-width: 110px;
+    margin-left: -9px;
   }
 
   .Herosection_featuresBarContainer__if\+wh {
@@ -2105,6 +2376,55 @@
     gap: 40px;
   }
 
+  .Helpcenter_helpcenterContainer__4PG4g {
+    padding: 100px 15px 60px;
+  }
+
+  .Helpcenter_helpcenterHeader__ADkcO h3 {
+    font-size: 28px;
+  }
+
+  .Helpcenter_searchSection__zGSSC {
+    margin-top: 25px;
+  }
+
+  .Helpcenter_searchInputGroup__xM\+Lt {
+    font-size: 16px;
+    line-height: 105.7%;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 85%;
+  }
+
+  .Helpcenter_filterInput__KgG7H {
+    padding: 15px 0;
+  }
+
+  .Helpcenter_filterInput__KgG7H {
+    padding: 15px 0;
+  }
+
+  .Helpcenter_helpCenterGrid__XKpu2 {
+    gap: 18px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 {
+    padding: 20px;
+  }
+
+  .Helpcenter_helpcenterCard__L3l76 h4 {
+    font-size: 18px;
+  }
+
+  .Helpcenter_cardInfoDiv__1Kmtr {
+    gap: 8px !important;
+    margin-top: 12px !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
