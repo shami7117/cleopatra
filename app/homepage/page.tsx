@@ -18,7 +18,7 @@ const CleopatraLanding = () => {
       <HeroSection />
       <Features />
       <AboutSection />
-      <TrustFeatures />
+      {/* <TrustFeatures /> */}
       <EarningsSection />
       <SparklBusiness />
       {/* <SparklerOfMonth /> */}

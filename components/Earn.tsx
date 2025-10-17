@@ -56,10 +56,10 @@ export default function EarningsSection() {
 
               {/* Feature Content */}
               <div className="text-center max-w-md">
-                <h3 className="text-xl sm:text-[24px] font-bold mb-3 sm:mb-4 text-gray-900">
+                <h3 className="text-xl sm:text-[24px] font-sans font-[600] mb-3 sm:mb-4 text-gray-900">
                   {feature.title}
                 </h3>
-                <p className="text-sm sm:text-[18px] text-[#777777] leading-relaxed">
+                <p className="text-sm sm:text-[18px] font-[400]  text-[#777777] leading-relaxed">
                   {feature.description}
                 </p>
               </div>
