@@ -1495,6 +1495,14 @@
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 2560px) {
+
+  .Pricingtable_tableMainDiv__s3rN5 {
+    gap: 40px;
+  }
+
+}
+
 @media only screen and (max-width: 1599px) {
   .Herosection_appBothButtons__tGRVa {
     gap: 16px;
@@ -1640,9 +1648,7 @@
     margin-top: 25px;
   }
 
-  .Pricingtable_tableMainDiv__s3rN5 {
-    gap: 30px;
-  }
+
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2311,6 +2317,7 @@
   .Tailoredprocess_featureImage__97OHd {
     order: 2;
   }
+
 
   .Tailoredprocess_featureDescription__gwnN1 {
     font-size: 16px;
