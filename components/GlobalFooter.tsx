@@ -1,6 +1,10 @@
 // import React from 'react';
-import { Poppins } from "next/font/google";
+import { Poppins, Quicksand } from "next/font/google";
 
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -48,12 +52,12 @@ const Footer = () => {
 
   return (
     <footer className={`bg-[#FD037E] text-white ${poppins.className}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-32">
           {/* Logo and Social Section */}
           <div className="space-y-6">
             {/* Logo Placeholder */}
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-white mt-2 rounded-lg flex items-center justify-center">
               {/* Add your logo here */}
               <Image
                 alt="logo"
@@ -85,18 +89,20 @@ const Footer = () => {
 
           {/* Apps Section */}
           <div>
-            <h3 className="text-[24px] font-medium mb-6">Apps</h3>
+            <h3 className="text-[20px] text-[#fff] font-sans font-[500] mb-8">
+              Apps
+            </h3>
             <ul className="space-y-4">
               {appLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.url}
-                    className="flex items-center justify-between group hover:translate-x-1 transition-transform duration-200"
+                    className="flex items-center justify-between text-[#fff] font-[400] font-sans group hover:translate-x-1 transition-transform duration-200"
                   >
-                    <span className="text-sm sm:text-[20px] font-normal">
+                    <span className="text-sm sm:text-[16px] font-normal">
                       {link.name}
                     </span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                    <ArrowRight className="lg:w-8 lg:h-8 sm:w-5 sm:h-5 group-hover:translate-x-1 text-[#fff] transition-transform duration-200" />
                   </a>
                 </li>
               ))}
@@ -104,13 +110,13 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div>
+          <div className="mt-1">
             <ul className="space-y-3 sm:space-y-4">
               {footerLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.url}
-                    className="text-sm sm:text-[20px] font-normal hover:underline transition-all duration-200 block"
+                    className="text-sm sm:text-[16px] font-sans font-[400]  text-[#fff] hover:underline transition-all duration-200 block"
                   >
                     {link.name}
                   </a>
@@ -121,8 +127,11 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-white/20 text-center">
-          <p className="text-sm">© 2025 Cleopatra Inc. All Rights Reserved</p>
+        <hr className="footer-divider " />
+        <div className="footer-bottom ">
+          <p className={`text-sm ${quicksand.className} font-[600]`}>
+            © 2025 Cleopatra Inc. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
