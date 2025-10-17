@@ -13,7 +13,7 @@ const SparklBusiness = () => {
             <div className="Businesssparkl_businessContent__zvI9Y">
               <div className="Businesssparkl_businessHeading__G6FJg">
                 <img
-                  src="/sparklforbusinesstitle.png"
+                  src="/businessSparkle.png"
                   alt="sparkle businnes image"
                   className="Businesssparkl_businessImageTitle__rD6v8"
                 />
@@ -28,7 +28,7 @@ const SparklBusiness = () => {
 
               <a href="#">
                 <button className="font-torus Businesssparkl_comingSoonButton__Bwzdm">
-                  join the wishlist
+                  comming soon
                 </button>
               </a>
             </div>
