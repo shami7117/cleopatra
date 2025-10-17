@@ -27,11 +27,11 @@ const SparklerOfMonth = () => {
           detail is handled with care, precision, and pride, delivering a
           cleaning fit for royalty.
         </p>
-        {/* <a href="#">
+        <a href="#">
           <button className="font-torus Businesssparkl_comingSoonButton__Bwzdm">
             Learn more
           </button>
-        </a> */}
+        </a>
       </div>
     </section>
   );
