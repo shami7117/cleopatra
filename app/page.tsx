@@ -21,7 +21,7 @@ const CleopatraLanding = () => {
       <SparklBusiness />
 
       <PricingTable />
-      {/* <BookCleaningCTA /> */}
+      <BookCleaningCTA />
       <Footer />
     </div>
   );

@@ -25,7 +25,7 @@ const BookCleaningCTA = () => {
       </div>
 
       {/* Wavy Bottom Border Image - Option 2: Using width/height */}
-      <div className="w-full overflow-hidden">
+      {/* <div className="w-full overflow-hidden">
         <Image
           src="/curve1.png"
           alt="Wave decoration"
@@ -34,7 +34,7 @@ const BookCleaningCTA = () => {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </div> */}
     </section>
   );
 };
