@@ -1575,6 +1575,10 @@
     gap: 18px;
     margin-top: 30px;
   }
+
+  .Pricingtable_tableMainDiv__s3rN5 {
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -1634,6 +1638,10 @@
   .Helpcenter_cardInfoDiv__1Kmtr {
     gap: 15px;
     margin-top: 25px;
+  }
+
+  .Pricingtable_tableMainDiv__s3rN5 {
+    gap: 30px;
   }
 }
 
